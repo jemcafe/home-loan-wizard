@@ -129,11 +129,8 @@ class WizardEleven extends Component {
 
 const mapStateToProps = state => {
     return {
-        firstName: state.firstname,
-        lastName: state.lastName,
-        email: state.email,
         loanType: state.loanType,
-        propType: state.propType,
+        propertyType: state.propertyType,
         city: state.city,
         propToBeUsedOn: state.propToBeUsedOn,
         found: state.found,
@@ -144,7 +141,10 @@ const mapStateToProps = state => {
         history: state.history,
         addressOne: state.addressOne,
         addressTwo: state.addressTwo,
-        addressThree: state.addressThree
+        addressThree: state.addressThree,
+        firstName: state.firstname,
+        lastName: state.lastName,
+        email: state.email
     }
 };
 
