@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { updateProp } from '../../ducks/reducer';
 
 class WizardThree extends Component {
+    
     render(){
         const { updateProp } = this.props;
 

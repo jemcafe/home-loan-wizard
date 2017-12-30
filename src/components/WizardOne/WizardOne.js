@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import { updateLoanType, updatePropertyType } from '../../ducks/reducer';
 
 class WizardOne extends Component {
-    render () {
+
+    render(){
         const { updateLoanType, updatePropertyType } = this.props;
 
         return(
