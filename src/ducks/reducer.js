@@ -1,6 +1,6 @@
 const initialState = {
     loanType: 'Home Purchase',
-    propType: 'Single Family Home',
+    propertyType: 'Single Family Home',
     city: '',
     propToBeUsedOn: '',
     found: false,
