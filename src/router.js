@@ -19,11 +19,11 @@ import { Route, HashRouter } from 'react-router-dom';
 export default (
     <HashRouter>
         <div>
-            <Route exact path= '/' component={ NextBtn } />
-            <Route path='/wOne' component={ WizardOne } />
+            <Route exact path="/" component={ NextBtn } />
+            <Route path="/wOne" component={ WizardOne } />
             <Route path="/wTwo" component={ WizardTwo } />
             <Route path="/wThree" component={ WizardThree } />
-            <Route path='/wFour' component={ WizardFour } />
+            <Route path="/wFour" component={ WizardFour } />
             <Route path="/wFive" component={ WizardFive } />
             <Route path="/wSix" component={ WizardSix } />
             <Route path="/wSeven" component={ WizardSeven } />
@@ -31,7 +31,7 @@ export default (
             <Route path="/wNine" component={WizardNine} /> 
             <Route path="/wTen" component={WizardTen} />
             <Route path="/wEleven"component={ WizardEleven }/>
-            <Route path='/finish' component={Finish} />
+            <Route path="/finish" component={Finish} />
         </div>
     </HashRouter>
 )

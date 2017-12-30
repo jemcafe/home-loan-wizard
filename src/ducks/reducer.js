@@ -23,16 +23,16 @@ const UPDATE_PROPERTY_TYPE = "UPDATE_PROPERTY_TYPE";
 const UPDATE_CITY = "UPDATE_CITY";
 
 // initialState is the default state
-function reducer( state = initialState, action ){
+function reducer ( state = initialState, action ) {
     switch ( action.type ) {
         case UPDATE_LOAN_TYPE:
-            // return Object.assign( {}, state, {loanType: action.payload} );
-            return { ...state, loanType: action.payload };
+            return { ...state, loanType: action.payload };  // return Object.assign( {}, state, {loanType: action.payload} );
         case UPDATE_PROPERTY_TYPE:
             return { ...state, propertyType: action.payload };
         case UPDATE_CITY:
             return { ...state, city: action.payload };
-        default: return state
+        default: 
+            return state;
     }
 }
 

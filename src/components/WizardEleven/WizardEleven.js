@@ -127,7 +127,7 @@ class WizardEleven extends Component {
     }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = ( state ) => {
     return {
         loanType: state.loanType,
         propertyType: state.propertyType,
@@ -142,7 +142,7 @@ const mapStateToProps = state => {
         addressOne: state.addressOne,
         addressTwo: state.addressTwo,
         addressThree: state.addressThree,
-        firstName: state.firstname,
+        firstName: state.firstName,
         lastName: state.lastName,
         email: state.email
     }
