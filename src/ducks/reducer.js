@@ -22,6 +22,7 @@ const UPDATE_LOAN_TYPE = "UPDATE_LOAN_TYPE";
 const UPDATE_PROPERTY_TYPE = "UPDATE_PROPERTY_TYPE";
 const UPDATE_CITY = "UPDATE_CITY";
 const UPDATE_PROP = "UPDATE_PROP";
+const UPDATE_FOUND = "UPDATE_FOUND";
 
 // initialState is the default state
 function reducer ( state = initialState, action ) {
@@ -34,6 +35,8 @@ function reducer ( state = initialState, action ) {
             return { ...state, city: action.payload };
         case UPDATE_PROP:
             return { ...state, propToBeUsedOn: action.payload };
+        case UPDATE_FOUND:
+            return { ...state, found: action.payload };
         default: 
             return state;
     }
@@ -65,6 +68,13 @@ export function updateProp ( prop ) {
     return {
         type: UPDATE_PROP,
         payload: prop
+    }
+}
+
+export function updateFound ( found ) {
+    return {
+        type: UPDATE_FOUND,
+        payload: found
     }
 }
 
